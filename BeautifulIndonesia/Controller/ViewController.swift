@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     private func loadPlacesData() {
         viewModel.fetchPlacesData(completion: { [weak self] in
             self?.placeTableView.dataSource = self
+            self?.placeTableView.delegate = self
             self?.placeTableView.register(UINib(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier: "PlaceCell")
             self?.placeTableView.reloadData()
         })
@@ -47,5 +48,14 @@ extension ViewController: UITableViewDataSource {
         
     }
     
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        
+        detail.place = viewModel.cellForRowAt(indexPath: indexPath)
+        self.navigationController?.pushViewController(detail, animated: true)
+    }
 }
 

@@ -18,6 +18,8 @@
 		CF48F75F25E8EC3B0019BFA4 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */; };
 		CF48F76025E8EC3B0019BFA4 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */; };
 		CFE614F825E920210068A0FB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE614F725E920210068A0FB /* Extensions.swift */; };
+		CFE614FD25E927800068A0FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE614FB25E927800068A0FB /* DetailViewController.swift */; };
+		CFE614FE25E927800068A0FB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE614FC25E927800068A0FB /* DetailViewController.xib */; };
 		CFE6D86425E9004E00B8E16D /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D86325E9004E00B8E16D /* PlaceViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		CFE614F725E920210068A0FB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CFE614FB25E927800068A0FB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CFE614FC25E927800068A0FB /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CFE6D86325E9004E00B8E16D /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +56,7 @@
 		CF1E170A25E8F13D003444B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFE614FC25E927800068A0FB /* DetailViewController.xib */,
 				CF48F74E25E8EAB50019BFA4 /* Main.storyboard */,
 				CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */,
 				CF48F75325E8EAB70019BFA4 /* LaunchScreen.storyboard */,
@@ -64,6 +69,7 @@
 			children = (
 				CF48F74C25E8EAB50019BFA4 /* ViewController.swift */,
 				CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */,
+				CFE614FB25E927800068A0FB /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			files = (
 				CF48F75525E8EAB70019BFA4 /* LaunchScreen.storyboard in Resources */,
 				CF48F75225E8EAB70019BFA4 /* Assets.xcassets in Resources */,
+				CFE614FE25E927800068A0FB /* DetailViewController.xib in Resources */,
 				CF48F75025E8EAB50019BFA4 /* Main.storyboard in Resources */,
 				CF48F76025E8EC3B0019BFA4 /* PlaceTableViewCell.xib in Resources */,
 			);
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE614FD25E927800068A0FB /* DetailViewController.swift in Sources */,
 				CF48F74D25E8EAB50019BFA4 /* ViewController.swift in Sources */,
 				CF48F74925E8EAB50019BFA4 /* AppDelegate.swift in Sources */,
 				CF1E171525E8F98E003444B9 /* ApiService.swift in Sources */,
