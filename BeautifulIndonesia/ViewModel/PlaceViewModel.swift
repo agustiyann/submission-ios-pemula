@@ -30,7 +30,7 @@ class PlaceViewModel {
         return 0
     }
     
-    func callForRowAt(indexPath: IndexPath) -> Place {
+    func cellForRowAt(indexPath: IndexPath) -> Place {
         return places[indexPath.row]
     }
 }

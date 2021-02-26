@@ -17,6 +17,7 @@
 		CF48F75525E8EAB70019BFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF48F75325E8EAB70019BFA4 /* LaunchScreen.storyboard */; };
 		CF48F75F25E8EC3B0019BFA4 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */; };
 		CF48F76025E8EC3B0019BFA4 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */; };
+		CFE614F825E920210068A0FB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE614F725E920210068A0FB /* Extensions.swift */; };
 		CFE6D86425E9004E00B8E16D /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D86325E9004E00B8E16D /* PlaceViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		CF48F75625E8EAB70019BFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		CFE614F725E920210068A0FB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CFE6D86325E9004E00B8E16D /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 		CF48F74725E8EAB50019BFA4 /* BeautifulIndonesia */ = {
 			isa = PBXGroup;
 			children = (
+				CFE614F625E920020068A0FB /* Utils */,
 				CFE6D86625E9084F00B8E16D /* ViewModel */,
 				CF1E171325E8F95B003444B9 /* Network */,
 				CF1E170E25E8F164003444B9 /* Base */,
@@ -120,6 +123,14 @@
 				CF48F75625E8EAB70019BFA4 /* Info.plist */,
 			);
 			path = BeautifulIndonesia;
+			sourceTree = "<group>";
+		};
+		CFE614F625E920020068A0FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CFE614F725E920210068A0FB /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CFE6D86625E9084F00B8E16D /* ViewModel */ = {
@@ -204,6 +215,7 @@
 				CF48F74D25E8EAB50019BFA4 /* ViewController.swift in Sources */,
 				CF48F74925E8EAB50019BFA4 /* AppDelegate.swift in Sources */,
 				CF1E171525E8F98E003444B9 /* ApiService.swift in Sources */,
+				CFE614F825E920210068A0FB /* Extensions.swift in Sources */,
 				CFE6D86425E9004E00B8E16D /* PlaceViewModel.swift in Sources */,
 				CF1E171025E8F72F003444B9 /* PlaceModel.swift in Sources */,
 				CF48F74B25E8EAB50019BFA4 /* SceneDelegate.swift in Sources */,

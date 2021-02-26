@@ -13,8 +13,6 @@ class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var namePlace: UILabel!
     @IBOutlet weak var descPlace: UILabel!
     
-    private var urlString: String = ""
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,26 +25,22 @@ class PlaceTableViewCell: UITableViewCell {
     }
     
     func setCellWithValuesOf(_ place: Place) {
-        updateUI(name: place.name, address: place.address, description: place.description, image: place.description)
+        updateUI(name: place.name, address: place.address, description: place.description, image: place.image)
     }
     
     private func updateUI(name: String?, address: String?, description: String?, image: String?) {
         self.namePlace.text = name
         self.descPlace.text = description
-        self.imagePlace.load(url: URL(string: image!)!)
+        
+        guard let imageUrl = URL(string: image!) else {
+            self.imagePlace.image = UIImage(named: "noImageAvailable")
+            return
+        }
+
+        self.imagePlace.loadImge(withUrl: imageUrl)
+        self.imagePlace.layer.cornerRadius = 12
+        self.imagePlace.clipsToBounds = true
     }
+    
 }
 
-extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
-}

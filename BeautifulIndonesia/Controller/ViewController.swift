@@ -11,16 +11,41 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var placeTableView: UITableView!
     
-    var apiService = ApiService()
+    private var viewModel = PlaceViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        apiService.getPlacesData(completion: {(result) in
-            print(result)
+        
+        self.navigationItem.title = "Beautiful Indonesia"
+        loadPlacesData()
+    }
+    
+    private func loadPlacesData() {
+        viewModel.fetchPlacesData(completion: { [weak self] in
+            self?.placeTableView.dataSource = self
+            self?.placeTableView.register(UINib(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier: "PlaceCell")
+            self?.placeTableView.reloadData()
         })
     }
 
+}
 
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRowsInSection(section: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceCell", for: indexPath) as? PlaceTableViewCell {
+            let place = viewModel.cellForRowAt(indexPath: indexPath)
+            cell.setCellWithValuesOf(place)
+            
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+        
+    }
+    
 }
 
