@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF186A5B25E9523F00BA914C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF186A5925E9523F00BA914C /* ProfileViewController.swift */; };
+		CF186A5C25E9523F00BA914C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF186A5A25E9523F00BA914C /* ProfileViewController.xib */; };
 		CF1E171025E8F72F003444B9 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E170F25E8F72F003444B9 /* PlaceModel.swift */; };
 		CF1E171525E8F98E003444B9 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E171425E8F98E003444B9 /* ApiService.swift */; };
 		CF48F74925E8EAB50019BFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48F74825E8EAB50019BFA4 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF186A5925E9523F00BA914C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CF186A5A25E9523F00BA914C /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		CF1E170F25E8F72F003444B9 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		CF1E171425E8F98E003444B9 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		CF48F74525E8EAB50019BFA4 /* BeautifulIndonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulIndonesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +60,7 @@
 		CF1E170A25E8F13D003444B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF186A5A25E9523F00BA914C /* ProfileViewController.xib */,
 				CFE614FC25E927800068A0FB /* DetailViewController.xib */,
 				CF48F74E25E8EAB50019BFA4 /* Main.storyboard */,
 				CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */,
@@ -70,6 +75,7 @@
 				CF48F74C25E8EAB50019BFA4 /* ViewController.swift */,
 				CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */,
 				CFE614FB25E927800068A0FB /* DetailViewController.swift */,
+				CF186A5925E9523F00BA914C /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF186A5C25E9523F00BA914C /* ProfileViewController.xib in Resources */,
 				CF48F75525E8EAB70019BFA4 /* LaunchScreen.storyboard in Resources */,
 				CF48F75225E8EAB70019BFA4 /* Assets.xcassets in Resources */,
 				CFE614FE25E927800068A0FB /* DetailViewController.xib in Resources */,
@@ -221,6 +228,7 @@
 			files = (
 				CFE614FD25E927800068A0FB /* DetailViewController.swift in Sources */,
 				CF48F74D25E8EAB50019BFA4 /* ViewController.swift in Sources */,
+				CF186A5B25E9523F00BA914C /* ProfileViewController.swift in Sources */,
 				CF48F74925E8EAB50019BFA4 /* AppDelegate.swift in Sources */,
 				CF1E171525E8F98E003444B9 /* ApiService.swift in Sources */,
 				CFE614F825E920210068A0FB /* Extensions.swift in Sources */,
