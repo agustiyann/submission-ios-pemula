@@ -39,6 +39,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="placeTableView" destination="6bA-v3-MN2" id="Mp4-oz-DZV"/>
+                        <outlet property="profileButton" destination="mI1-Ab-wPS" id="Efp-b0-vZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

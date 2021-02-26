@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "man.png",
+      "filename" : "rsz_man.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "man@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "man@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -10,11 +10,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var placeTableView: UITableView!
+    @IBOutlet weak var profileButton: UIBarButtonItem!
     
     private var viewModel = PlaceViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        profileButton.image = UIImage(named: "man")
         
         self.navigationItem.title = "Beautiful Indonesia"
         loadPlacesData()
