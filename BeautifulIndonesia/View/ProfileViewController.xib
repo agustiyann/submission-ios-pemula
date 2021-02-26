@@ -26,8 +26,14 @@
                         <constraint firstAttribute="height" constant="200" id="Psd-UT-mH8"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agus Tiyansyah Syam" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O98-iD-IKT">
+                    <rect key="frame" x="20" y="311" width="388" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="| 🎓 IT Undergraduate | 👨🏻‍💻 Aspiring iOS Developer | 🐣 1999 | 🐈 Meowed | ☕️ Coffee |" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h31-ws-VWf">
-                    <rect key="frame" x="20" y="311" width="388" height="40.666666666666686"/>
+                    <rect key="frame" x="20" y="342" width="388" height="40.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -37,13 +43,15 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="rfg-Qf-uPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="51" id="5Wy-v8-6Vj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h31-ws-VWf" secondAttribute="trailing" constant="20" id="Bud-K8-e2I"/>
-                <constraint firstItem="h31-ws-VWf" firstAttribute="top" secondItem="rfg-Qf-uPd" secondAttribute="bottom" constant="16" id="GFg-9W-g2n"/>
-                <constraint firstItem="h31-ws-VWf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="KMQ-RG-usr"/>
-                <constraint firstItem="h31-ws-VWf" firstAttribute="top" secondItem="rfg-Qf-uPd" secondAttribute="bottom" constant="16" id="PhE-yG-h4F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O98-iD-IKT" secondAttribute="trailing" constant="20" id="9sY-sb-8Ks"/>
+                <constraint firstItem="h31-ws-VWf" firstAttribute="top" secondItem="O98-iD-IKT" secondAttribute="bottom" constant="8" id="Tgm-rR-92L"/>
+                <constraint firstItem="h31-ws-VWf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WG8-7D-ota"/>
+                <constraint firstItem="O98-iD-IKT" firstAttribute="top" secondItem="rfg-Qf-uPd" secondAttribute="bottom" constant="16" id="a8j-AR-rfF"/>
+                <constraint firstItem="O98-iD-IKT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dt8-aI-PId"/>
                 <constraint firstItem="rfg-Qf-uPd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lo2-Bq-hgP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h31-ws-VWf" secondAttribute="trailing" constant="20" id="nS2-EI-2K9"/>
             </constraints>
-            <point key="canvasLocation" x="140.57971014492756" y="129.91071428571428"/>
+            <point key="canvasLocation" x="140.18691588785046" y="129.58963282937367"/>
         </view>
     </objects>
     <resources>
