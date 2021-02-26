@@ -41,6 +41,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF1E170A25E8F13D003444B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF48F74E25E8EAB50019BFA4 /* Main.storyboard */,
+				CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */,
+				CF48F75325E8EAB70019BFA4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF1E170C25E8F151003444B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF48F74C25E8EAB50019BFA4 /* ViewController.swift */,
+				CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF1E170D25E8F15D003444B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF1E170E25E8F164003444B9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF48F74825E8EAB50019BFA4 /* AppDelegate.swift */,
+				CF48F74A25E8EAB50019BFA4 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		CF48F73C25E8EAB50019BFA4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +95,11 @@
 		CF48F74725E8EAB50019BFA4 /* BeautifulIndonesia */ = {
 			isa = PBXGroup;
 			children = (
-				CF48F74825E8EAB50019BFA4 /* AppDelegate.swift */,
-				CF48F74A25E8EAB50019BFA4 /* SceneDelegate.swift */,
-				CF48F74C25E8EAB50019BFA4 /* ViewController.swift */,
-				CF48F74E25E8EAB50019BFA4 /* Main.storyboard */,
-				CF48F75D25E8EC3B0019BFA4 /* PlaceTableViewCell.swift */,
-				CF48F75E25E8EC3B0019BFA4 /* PlaceTableViewCell.xib */,
+				CF1E170E25E8F164003444B9 /* Base */,
+				CF1E170D25E8F15D003444B9 /* Model */,
+				CF1E170C25E8F151003444B9 /* Controller */,
+				CF1E170A25E8F13D003444B9 /* View */,
 				CF48F75125E8EAB70019BFA4 /* Assets.xcassets */,
-				CF48F75325E8EAB70019BFA4 /* LaunchScreen.storyboard */,
 				CF48F75625E8EAB70019BFA4 /* Info.plist */,
 			);
 			path = BeautifulIndonesia;
