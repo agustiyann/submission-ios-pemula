@@ -30,7 +30,13 @@
                             <constraint firstItem="6bA-v3-MN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oFb-qM-atz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aXS-lx-mvu"/>
+                    <navigationItem key="navigationItem" id="aXS-lx-mvu">
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="mI1-Ab-wPS">
+                            <connections>
+                                <action selector="showProfile:" destination="BYZ-38-t0r" id="IGa-z5-vcT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="placeTableView" destination="6bA-v3-MN2" id="Mp4-oz-DZV"/>
                     </connections>

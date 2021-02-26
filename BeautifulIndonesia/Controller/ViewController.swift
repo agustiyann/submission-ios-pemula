@@ -28,7 +28,12 @@ class ViewController: UIViewController {
             self?.placeTableView.reloadData()
         })
     }
-
+    
+    @IBAction func showProfile(_ sender: UIBarButtonItem) {
+        let profile = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        self.navigationController?.pushViewController(profile, animated: true)
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
