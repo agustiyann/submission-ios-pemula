@@ -18,8 +18,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         profileButton.image = UIImage(named: "man")
-        
         self.navigationItem.title = "Beautiful Indonesia"
+        self.showSpinner()
+        
         loadPlacesData()
     }
     
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
             self?.placeTableView.delegate = self
             self?.placeTableView.register(UINib(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier: "PlaceCell")
             self?.placeTableView.reloadData()
+            self?.removeSpinner()
         })
     }
     
