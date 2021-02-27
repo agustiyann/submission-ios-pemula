@@ -11,6 +11,7 @@
 		CF186A5C25E9523F00BA914C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF186A5A25E9523F00BA914C /* ProfileViewController.xib */; };
 		CF1E171025E8F72F003444B9 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E170F25E8F72F003444B9 /* PlaceModel.swift */; };
 		CF1E171525E8F98E003444B9 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E171425E8F98E003444B9 /* ApiService.swift */; };
+		CF2ADD4F25EA0F3200DFDE70 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2ADD4E25EA0F3200DFDE70 /* NetworkMonitor.swift */; };
 		CF48F74925E8EAB50019BFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48F74825E8EAB50019BFA4 /* AppDelegate.swift */; };
 		CF48F74B25E8EAB50019BFA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48F74A25E8EAB50019BFA4 /* SceneDelegate.swift */; };
 		CF48F74D25E8EAB50019BFA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48F74C25E8EAB50019BFA4 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		CF186A5A25E9523F00BA914C /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		CF1E170F25E8F72F003444B9 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		CF1E171425E8F98E003444B9 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		CF2ADD4E25EA0F3200DFDE70 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		CF48F74525E8EAB50019BFA4 /* BeautifulIndonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulIndonesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF48F74825E8EAB50019BFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF48F74A25E8EAB50019BFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE614F725E920210068A0FB /* Extensions.swift */,
+				CF2ADD4E25EA0F3200DFDE70 /* NetworkMonitor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2ADD4F25EA0F3200DFDE70 /* NetworkMonitor.swift in Sources */,
 				CFE614FD25E927800068A0FB /* DetailViewController.swift in Sources */,
 				CF48F74D25E8EAB50019BFA4 /* ViewController.swift in Sources */,
 				CF186A5B25E9523F00BA914C /* ProfileViewController.swift in Sources */,

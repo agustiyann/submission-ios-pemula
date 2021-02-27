@@ -17,11 +17,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if NetworkMonitor.shared.isConnected {
+            print("Connected")
+            self.showSpinner()
+            
+            loadPlacesData()
+        } else {
+            print("Not connected")
+            self.showSpinner()
+            showConnectionAlert()
+        }
+        
         profileButton.image = UIImage(named: "man")
         self.navigationItem.title = "Beautiful Indonesia"
-        self.showSpinner()
-        
-        loadPlacesData()
     }
     
     private func loadPlacesData() {
@@ -37,6 +45,16 @@ class ViewController: UIViewController {
     @IBAction func showProfile(_ sender: UIBarButtonItem) {
         let profile = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
         self.navigationController?.pushViewController(profile, animated: true)
+    }
+    
+    func showConnectionAlert() {
+        let alert = UIAlertController(title: "Connection Problem", message: "Make sure your device is connected to an internet and try to restart the app!", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            print("Mengganti profile")
+            self.removeSpinner()
+        }))
+        self.present(alert, animated: true)
     }
     
 }
