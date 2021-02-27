@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
                 self.imagePlace.image = UIImage(named: "noImageAvailable")
                 return
             }
-            imagePlace.loadImge(withUrl: imageUrl)
+            imagePlace.loadImage(withUrl: imageUrl)
         }
     }
 

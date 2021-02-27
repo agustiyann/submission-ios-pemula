@@ -51,7 +51,6 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Connection Problem", message: "Make sure your device is connected to an internet and try to restart the app!", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-            print("Mengganti profile")
             self.removeSpinner()
         }))
         self.present(alert, animated: true)
@@ -80,6 +79,7 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
         
         detail.place = viewModel.cellForRowAt(indexPath: indexPath)

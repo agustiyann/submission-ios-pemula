@@ -26,7 +26,7 @@ class PlaceTableViewCell: UITableViewCell {
             return
         }
 
-        self.imagePlace.loadImge(withUrl: imageUrl)
+        self.imagePlace.loadImage(withUrl: imageUrl)
         self.imagePlace.layer.cornerRadius = 12
         self.imagePlace.clipsToBounds = true
     }
